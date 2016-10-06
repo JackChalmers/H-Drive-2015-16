@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CellPhone()
+comment1.params=minutesUsed\ gigsUsed
+comment1.target=void\ calculateOverageCharge(int,\ double)
+comment1.text=\r\n\ \ Calculates\ monthly\ phone\ bill\ depending\ on\ the\ data\ and\ minute\ plan\ chosen.\r\n\ \ @param\ minutesUsed\ integer\ value\ of\ minutes\ used\r\n\ \ @param\ gigsUsed\ double\ value\ of\ gigabites\ used\r\n
+comment2.params=minutesUsed
+comment2.target=void\ calculateMinuteCharge(int)
+comment3.params=gigsUsed
+comment3.target=void\ calculateDataCharge(double)
+comment4.params=
+comment4.target=void\ printFinalBill()
+numComments=5

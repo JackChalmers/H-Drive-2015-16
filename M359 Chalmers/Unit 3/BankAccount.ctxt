@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BankAccount()
+comment1.params=pin\ balance\ acctName\ adr
+comment1.target=BankAccount(int,\ double,\ java.lang.String,\ Address)
+comment10.params=addr\ city\ state\ zip
+comment10.target=void\ setAddress(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment11.params=
+comment11.target=java.lang.String\ getAddress()
+comment2.params=
+comment2.target=void\ printBalance()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=whenever\ an\ objects\ identifier\ (variable\ name)\ is\ printer\r\n\ the\ toString()\ method\ is\ called\ automatically\r\n\ EX\:\ \ BankAccount\ momsMoney\ \=\ new\ BankAccount();\r\n\ \ \ \ \ \ System.out.print(momsMoney)\r\n
+comment4.params=
+comment4.target=double\ getBalance()
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment5.text=\r\n\ \ \ \ public\ int\ getAcctNum()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ return\ acctNum;\r\n\ \ \ \ }\r\n
+comment6.params=pin
+comment6.target=void\ setPin(int)
+comment7.params=acctName
+comment7.target=void\ setAcctName(java.lang.String)
+comment8.params=val
+comment8.target=void\ withdraw(double)
+comment9.params=val
+comment9.target=void\ deposit(double)
+numComments=12

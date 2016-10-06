@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Bill()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Bill\r\n
+comment1.params=
+comment1.target=void\ takeReservation()
+comment1.text=\r\n\ takeReservation\ prompts\ the\ user\ for\ the\ details\ and\ stores\r\n\ them\ in\ the\ instance\ fields\r\n\ \r\n\ @param\ \ \ \ \ \ \ none\r\n\ @return\ \ \ \ \ \ none\r\n
+comment2.params=
+comment2.target=void\ calculateBill()
+comment2.text=\r\n\ calculateBill\ creates\ the\ bill\ with\ users\ input\r\n\ \r\n\ @param\ \ \ \ \ \ \ none\r\n\ @return\ \ \ \ \ \ none\r\n
+comment3.params=
+comment3.target=void\ displayBill()
+comment3.text=\r\n\ displayBill\ displays\ the\ bill\ with\ users\ input\r\n\ \r\n\ @param\ \ \ \ \ \ \ none\r\n\ @return\ \ \ \ \ \ none\r\n
+numComments=4

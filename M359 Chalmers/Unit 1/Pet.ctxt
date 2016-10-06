@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=aName\ aSpecies\ anAge\ aWeight
+comment0.target=Pet(java.lang.String,\ java.lang.String,\ int,\ int)
+comment0.text=\r\n\ a\ constructor\ is\ called\ everytime\ you\ create\ a\ new\ Pet()\ object\r\n\ A\ constructor\ has\ no\ return\ type\r\n\ A\ constructor\ has\ the\ same\ name\ as\ the\ class\r\n\ Common\ to\ write\ more\ than\ one\ constructor\r\n\ \r\n
+comment1.params=
+comment1.target=void\ play()
+comment2.params=
+comment2.target=void\ eat()
+comment3.params=newName
+comment3.target=void\ changeName(java.lang.String)
+comment4.params=
+comment4.target=void\ hasbirthday()
+comment5.params=
+comment5.target=void\ gainsWeight()
+numComments=6

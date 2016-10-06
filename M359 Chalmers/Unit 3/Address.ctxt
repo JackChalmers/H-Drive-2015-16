@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Address()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Address\r\n
+comment1.params=streetAddress\ city\ state\ zipCode
+comment1.target=Address(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Returns\ the\ adress\ as\ a\ nicely\ formatted\ String\r\n\ \r\n\ @return\ \ \ \ \ result\ -\ the\ address\r\n
+comment3.params=streetAddress\ city\ state\ zipCode
+comment3.target=void\ setAddress(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=4
