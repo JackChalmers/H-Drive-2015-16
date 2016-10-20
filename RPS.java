@@ -24,6 +24,8 @@ public class RPS
     private int playerWins;
     private int compWins;
     
+    private int contChoice;
+    
     public boolean playAgain;
 
     
@@ -34,14 +36,13 @@ public class RPS
     {
         // initialise instance variables
         Scanner in = new Scanner(System.in);
-        System.out.println("Hello! Welcome to a game of Rock, Paper, Scissors! \nWhat is your name?");
+        System.out.println("\fHello! Welcome to a game of Rock, Paper, Scissors! \nWhat is your name?");
         playerName = in.nextLine(); 
         
         gameplay();
         
             
-        System.out.println(playerChoiceWord);
-        System.out.println(compChoiceWord);
+        
     }
 
     /**
@@ -99,8 +100,15 @@ public class RPS
      */
     public void gameOverP()
     {
-        System.out.println("\fYou win! Congratulations! Play Again?\n1. Yes\n2. No");
-        
+        System.out.println("\fYou win! Congratulations"  + playerName + "! Play Again?\n1. Yes\n2. No");
+        Scanner in = new Scanner(System.in);
+        contChoice = in.nextInt();
+        if(contChoice == 1)
+        {
+            RPS gameOne = new RPS();
+        }
+        else if(contChoice == 2)
+            System.out.println("\f");
     }
     
     /*
@@ -112,7 +120,14 @@ public class RPS
     public void gameOverC()
     {
         System.out.println("\fYou lose! Better luck next time! Play Again?\n1. Yes\n2. No");
-        
+        Scanner in = new Scanner(System.in);
+        contChoice = in.nextInt();
+        if(contChoice == 1)
+        {
+            RPS gameOne = new RPS();
+        }
+        else if(contChoice == 2)
+            System.out.println("\f");
     }
     
     /*
@@ -160,6 +175,9 @@ public class RPS
                 gameTie();
             else
                 playerLoses();
+                
+            System.out.println(playerChoiceWord);
+            System.out.println(compChoiceWord);
             
             if(playerWins == 5)
                 {
