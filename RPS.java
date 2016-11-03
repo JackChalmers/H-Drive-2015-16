@@ -27,6 +27,7 @@ public class RPS
     private int contChoice;
     
     public boolean playAgain;
+    public boolean playGame = true;
 
     
     /**
@@ -39,7 +40,7 @@ public class RPS
         System.out.println("\fHello! Welcome to a game of Rock, Paper, Scissors! \nWhat is your name?");
         playerName = in.nextLine(); 
         
-        gameplay();
+        //gameplay();
         
             
         
@@ -67,6 +68,16 @@ public class RPS
     {
         playerWins++;
         System.out.println("Player Wins");
+        System.out.println(playerName + ": " + playerChoiceWord);
+        System.out.println("Computer: " + compChoiceWord);
+        if(playerWins != 5 && compWins !=5)
+            gameplay();
+        else{
+            if(playerWins == 5)
+                gameOverP();
+            else
+                gameOverC();
+            }
     }
     
     /**
@@ -79,6 +90,16 @@ public class RPS
     {
         compWins++;
         System.out.println("Computer Wins");
+        System.out.println(playerName + ": " + playerChoiceWord);
+        System.out.println("Computer: " + compChoiceWord);
+        if(playerWins != 5 && compWins !=5)
+            gameplay();
+        else{
+            if(playerWins == 5)
+                gameOverP();
+            else
+                gameOverC();
+            }
     }
     
     /**
@@ -90,6 +111,16 @@ public class RPS
     public void gameTie()
     {
         System.out.println("Round Draw");
+        System.out.println(playerName + ": " + playerChoiceWord);
+        System.out.println("Computer: " + compChoiceWord);
+        if(playerWins != 5 && compWins !=5)
+            gameplay();
+        else{
+            if(playerWins == 5)
+                gameOverP();
+            else
+                gameOverC();
+            }
     }
     
     /*
@@ -100,15 +131,8 @@ public class RPS
      */
     public void gameOverP()
     {
-        System.out.println("\fYou win! Congratulations"  + playerName + "! Play Again?\n1. Yes\n2. No");
-        Scanner in = new Scanner(System.in);
-        contChoice = in.nextInt();
-        if(contChoice == 1)
-        {
-            RPS gameOne = new RPS();
-        }
-        else if(contChoice == 2)
-            System.out.println("\f");
+        System.out.println("You win! Congratulations"  + playerName + "! Play Again?\n1. Yes\n2. No");
+        playGame = false;
     }
     
     /*
@@ -119,15 +143,8 @@ public class RPS
      */
     public void gameOverC()
     {
-        System.out.println("\fYou lose! Better luck next time! Play Again?\n1. Yes\n2. No");
-        Scanner in = new Scanner(System.in);
-        contChoice = in.nextInt();
-        if(contChoice == 1)
-        {
-            RPS gameOne = new RPS();
-        }
-        else if(contChoice == 2)
-            System.out.println("\f");
+        System.out.println("You lose! Better luck next time! Play Again?\n1. Yes\n2. No");
+        playGame = false;        
     }
     
     /*
@@ -138,8 +155,6 @@ public class RPS
      */
     public void gameplay()
     {
-        while(playerWins != 5 || compWins !=5)
-        {
             Scanner in = new Scanner(System.in);
             System.out.println("What hand do you want to play?\n1. Rock\n2. Paper\n3. Scissors");
             playerChoiceNum = in.nextInt();
@@ -157,8 +172,7 @@ public class RPS
                 compChoiceWord = "Paper";
             else if(compChoiceNum == SCISSORS)
                 compChoiceWord = "Scissors";
-                
-                
+                    
             if(playerChoiceNum == ROCK && compChoiceNum == SCISSORS)
                 {
                     playerWinRound();
@@ -175,24 +189,6 @@ public class RPS
                 gameTie();
             else
                 playerLoses();
-                
-            System.out.println(playerChoiceWord);
-            System.out.println(compChoiceWord);
-            
-            if(playerWins == 5)
-                {
-                    gameOverP();
-                    break;
-                }
-            else if(compWins ==5)
-                {
-                   gameOverC();
-                   break;
-                }
-                
-        }
-        
-        
     }
     
 }

@@ -7,9 +7,22 @@ import java.util.Scanner;
  */
 public class RPSDriver
 {
-    public static void main()    
+    public static void main(String[] args)    
     {
-        System.out.println("\f");
+        boolean playGame = true;
+        Scanner in = new Scanner(System.in);
         RPS gameOne = new RPS();
+        while(playGame == false)
+        {
+        System.out.println("Play Again? \n1. yes\n2. no");
+        int input = in.nextInt();
+        if(input == 1)
+            playGame = true;
+        else
+        { 
+            System.out.print("\f");
+            System.out.print("Thanks For Playing!");
+        }
+        }
     }
 }
